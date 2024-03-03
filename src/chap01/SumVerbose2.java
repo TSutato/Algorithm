@@ -16,13 +16,14 @@ class SumVerbose2 {
 		
 		int sum = 0; //総和
 		
-		//if文の繰り返し処理は無し。
+		//if文の繰り返し処理はn回から無しになる。
 		for(int i = 1;  i<n ; i++) {
 			System.out.print(i + "+");
 			sum += i;  //足し続け、nに到達する一つ前（n-1)までの計算分iを加える。
 	   }
 			System.out.print(n + "=");
             sum += n;
+            //System.out.println(n + " = " + (sum += n)+ "となります。");
             
             System.out.println(sum + "となります。" );
 	
